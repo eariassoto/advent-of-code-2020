@@ -66,6 +66,7 @@ std::string day_05_02(const std::string& input) {
         }
     };
 
+
     doForEachSubstring(input, [&](std::string input) {
         std::pair<size_t, size_t> planeRow = std::make_pair(0, 127);
         for (int i = 0; i < 7; ++i) {

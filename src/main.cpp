@@ -10,14 +10,15 @@
 #include "day_03.h"
 #include "day_04.h"
 #include "day_05.h"
+#include "day_06.h"
 
 typedef std::string (*PuzzlePhaseFunc)(const std::string& input);
 
 int main(int argc, char* argv[]) {
-    constexpr std::array<PuzzlePhaseFunc, 5> phase1Puzzles{
-        day_01_01, day_02_01, day_03_01, day_04_01, day_05_01};
-    constexpr std::array<PuzzlePhaseFunc, 5> phase2Puzzles{
-        day_01_02, day_02_02, day_03_02, day_04_02, day_05_02};
+    constexpr std::array<PuzzlePhaseFunc, 6> phase1Puzzles{
+        day_01_01, day_02_01, day_03_01, day_04_01, day_05_01, day_06_01};
+    constexpr std::array<PuzzlePhaseFunc, 6> phase2Puzzles{
+        day_01_02, day_02_02, day_03_02, day_04_02, day_05_02, day_06_02};
 
     if (argc < 4) {
         std::cout << "Day, phase, or input file path missing.\n";
